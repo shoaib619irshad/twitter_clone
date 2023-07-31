@@ -1,0 +1,161 @@
+body{
+    background-color: #252525;
+}
+.container{
+    max-width: 600px;
+    min-height: 85vh;
+    background-color: #000;
+    padding: 24px 20px;
+    border-radius: 16px;
+    margin-inline: 2rem;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    color: #d6d9db;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.close-button{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    padding: 7px 11px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    background-color: #000;
+    color: white;
+}
+.close-button:hover{
+    background-color: #212222;
+}
+.logo{
+    font-size: 20px;
+    color: whitesmoke;
+}
+.content{
+    width: 300px;
+    text-align: center;
+    margin-inline: auto;
+}
+.content h1{
+    margin-block: 20px;
+    color: white;
+}
+.action-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 36px;
+}
+.primary-button, .secondary-button{
+    width: 100%;
+    border-radius: 50px;
+    padding: 8px 0;
+    font-size: 12px;
+    font-weight: 600;
+}
+.primary-button{
+    background-color: #fff;
+    color: #0f1419;
+}
+.primary-button:hover{
+    background-color: #e6e6e6
+}
+.secondary-button{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #536471;
+}
+.secondary-button:hover{
+    background-color: #181919;
+}
+.sign-in-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.sign-in-button object{
+    width: 24px;
+    height: 24px;
+}
+input::placeholder{
+    opacity:0;
+}
+label {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    color: #71767b;
+    font-size: 18px;
+    pointer-events: none;
+    transition: 200ms ease;
+}
+input:focus{
+    outline: 1px solid #1d9bf0;
+}
+input:focus + label{
+    color: #1d9bf0;
+}
+input:not(:placeholder-shown) + label,
+input:focus + label{
+    top: 6px;
+    left: 10px;
+    font-size: 12px;
+}
+.sign-up{
+    margin-top: 32px;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+}
+.sign-up a{
+    color: #1d9bf0;
+    text-decoration: none;
+}
+.sign-up a:hover{
+    text-decoration: underline;
+}
+.divider{
+    width: 100%;
+    margin-block: 20px;
+    position: relative;
+    color: white;
+}
+.divider p::before,.divider p::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 1px;
+    background-color: #333639;
+}
+.divider p::before{
+    left: 0;
+}
+.divider p::after{
+    right: 0;
+}
+.email-log-in{
+    width: 100%;
+    position: relative;
+}
+.email-log-in input{
+    width: 100%;
+    border-radius: 6px;
+    background-color: transparent;
+    border: 1px solid #333639;
+    outline: none;
+    padding: 20px 10px;
+    color: white;
+    font-size: 18px;
+    font-family: "Roboto";
+
+}
